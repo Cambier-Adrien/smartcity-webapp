@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Les feux tricolores de votre ville semblent-ils s'adapter au trafic en temps réel ?",
+    "choices": [
+      "Oui, ils changent selon l'affluence des voitures",
+      "Non, ils ont toujours le même rythme",
+      "Je ne sais pas / jamais fait attention",
+      "Il n'y a pas de feux tricolores proches de chez moi"
+    ],
+    "info": "Dans une Smartcity, des capteurs détectent l'affluence et optimisent les feux pour fluidifier la circulation, réduisant ainsi les émissions de CO₂ dues aux embouteillages."
+  },
+  {
+    "question": "Les poubelles ou conteneurs sont-ils équipés de capteurs ou envoyés à la collecte seulement quand ils sont pleins ?",
+    "choices": [
+      "Oui, je vois des voyants ou des capteurs",
+      "Non, elles sont collectées selon un planning fixe",
+      "Je ne sais pas",
+      "Il n'y a pas de conteneurs proches de chez moi"
+    ],
+    "info": "Certaines villes utilisent des capteurs de remplissage pour organiser les tournées de camions de manière plus écologique et économique, évitant les trajets inutiles."
+  },
+  {
+    "question": "L'éclairage public semble-t-il s'adapter à la présence ou à l'heure de la nuit ?",
+    "choices": [
+      "Oui, il s'active quand je passe ou devient moins fort tard",
+      "Non, il reste allumé à pleine puissance toute la nuit",
+      "Il n'y a pas d'éclairage dans ma rue",
+      "Je ne sais pas"
+    ],
+    "info": "L'éclairage intelligent réduit la consommation d'énergie jusqu'à 60% tout en limitant la pollution lumineuse, néfaste pour la biodiversité."
+  },
+  {
+    "question": "Avez-vous accès à des modes de transport doux en libre-service (vélos, trottinettes, navettes électriques) ?",
+    "choices": [
+      "Oui, et ils sont bien intégrés dans l'appli de transports",
+      "Oui, mais peu nombreux ou mal répartis",
+      "Non, il n'y en a pas",
+      "Je ne sais pas"
+    ],
+    "info": "Une mobilité connectée réduit le recours à la voiture individuelle. En intégrant les transports dans une appli unique, une Smartcity favorise les transports écologiques et accessibles à tous."
+  },
+  {
+    "question": "Y a-t-il des espaces verts ou des toitures végétalisées intégrés dans des projets urbains récents ?",
+    "choices": [
+      "Oui, beaucoup !",
+      "Oui, quelques-uns",
+      "Non, très peu",
+      "Je ne sais pas"
+    ],
+    "info": "Les Smartcities intègrent la nature en ville : cela améliore la qualité de l'air, régule la température et favorise la biodiversité urbaine. On parle d'infrastructure verte intelligente."
+  },
+  {
+    "question": "Avez-vous déjà vu une plateforme numérique de participation citoyenne ou signalement (application ou site de votre ville) ?",
+    "choices": [
+      "Oui, j'y ai même déjà participé",
+      "Oui, j'ai vu mais jamais utilisé",
+      "Non",
+      "Je ne sais pas"
+    ],
+    "info": "Une Smartcity inclut ses citoyens dans la gestion urbaine. Cela s'appelle la gouvernance participative et elle permet de mieux répondre aux besoins réels tout en optimisant les ressources."
+  }
+]
