@@ -14,13 +14,13 @@ export default function Button({
   ...rest
 }: ButtonProps) {
   let base =
-    "font-sans font-bold text-lg transition-all duration-200 focus:outline-none px-8 py-4 rounded-full shadow-sm";
+    "font-sans font-bold text-lg transition-all duration-200 focus:outline-none px-8 py-2 cursor-pointer";
   if (variant === "choice") {
     base +=
-      " bg-white text-black border border-gray-200 hover:bg-gray-50 active:scale-95" +
-      (selected ? " ring-2 ring-black" : "");
+      " bg-transparent backdrop-blur-md text-white border-2 border-transparent hover:border-white active:scale-95 rounded-xl";
   } else {
-    base += " bg-black text-white hover:bg-neutral-900 active:scale-95";
+    base +=
+      " bg-black text-white hover:bg-neutral-900 active:scale-95 rounded-full ";
   }
   return (
     <button className={`${base} ${className}`} {...rest}>

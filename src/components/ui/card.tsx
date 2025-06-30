@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "@/components/ui/title";
 
 interface CardProps {
   image?: string;
@@ -17,7 +18,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={`bg-white rounded-2xl p-10 flex flex-col items-center gap-6 shadow-sm hover:shadow-md transition-shadow duration-200 ${className}`}
+      className={`bg-white rounded-xl p-10 flex flex-col items-center gap-6 custom-shadow transition-shadow duration-200 ${className}`}
     >
       {image && (
         <div className="w-full h-40 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center mb-2">
@@ -29,9 +30,12 @@ export default function Card({
         </div>
       )}
       {title && (
-        <h3 className="font-semibold text-xl md:text-2xl mb-2 text-gray-900 text-center leading-tight">
+        <Title
+          level={3}
+          className="mb-2 text-gray-900 text-center leading-tight"
+        >
           {title}
-        </h3>
+        </Title>
       )}
       {description && (
         <p className="text-base text-gray-600 text-center mb-2 font-sans">

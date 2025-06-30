@@ -5,20 +5,19 @@ import Card from "@/components/ui/card";
 export default function AboutPage() {
   return (
     <Section className="gap-8">
-      <Title level={2} className="mb-1 text-center">
-        À propos du projet
-      </Title>
-      <p className="text-base md:text-lg text-gray-700 mb-4 text-center max-w-xl mx-auto">
-        <strong>Imagine ta ville</strong> est une expérience interactive créée
-        lors du hackathon &quot;IA for Good&quot;. L&apos;objectif :
-        sensibiliser à l&apos;écologie urbaine en montrant l&apos;impact de nos
-        choix sur la ville du futur.
-      </p>
-      <Card className="w-full max-w-xl mx-auto">
-        <h3 className="text-lg font-bold mb-2 text-accent-blue">
-          Notre démarche
-        </h3>
-        <ul className="list-disc pl-6 space-y-1 text-gray-700 text-base">
+      <Title level={1}>À propos du projet</Title>
+      <div className="flex justify-center items-center bg-transparent backdrop-blur py-2 px-4 rounded-xl">
+        <p className="text-base text-white text-center">
+          <strong>Imagine ta ville</strong> est une expérience interactive créée
+          lors du hackathon &quot;IA for Good&quot;. L&apos;objectif :
+          sensibiliser à l&apos;écologie urbaine en montrant l&apos;impact de
+          nos choix sur la ville du futur.
+        </p>
+      </div>
+      <Card>
+        <Title level={3}>Notre démarche</Title>
+
+        <ul className="list-disc pl-6 text-base text-gray-700">
           <li>
             Chaque étape met en avant un enjeu concret de la Smart City :
             mobilité, énergie, nature, IA.
@@ -31,25 +30,11 @@ export default function AboutPage() {
             Le résultat est généré par l&apos;IA : image stylisée, score, slogan
             personnalisé.
           </li>
-          <li>
-            Le design s&apos;inspire de{" "}
-            <a
-              href="https://wepresent.wetransfer.com/"
-              className="text-accent-pink underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              WePresent
-            </a>{" "}
-            pour une expérience immersive et moderne.
-          </li>
         </ul>
       </Card>
-      <Card className="w-full max-w-xl mx-auto">
-        <h3 className="text-lg font-bold mb-2 text-accent-green">
-          Notre réflexion critique
-        </h3>
-        <ul className="list-disc pl-6 space-y-1 text-gray-700 text-base">
+      <Card>
+        <Title level={3}>Notre réflexion critique</Title>
+        <ul className="list-disc pl-6 text-base text-gray-700">
           <li>
             L&apos;IA peut être un outil puissant pour l&apos;écologie, mais
             elle pose aussi des questions éthiques (surveillance, vie privée,
@@ -64,9 +49,11 @@ export default function AboutPage() {
           </li>
         </ul>
       </Card>
-      <p className="text-xs text-gray-400 mt-6 text-center">
-        Projet réalisé par l&apos;équipe Hackathon Ynov Sophia – 2024
-      </p>
+      <div className="flex justify-center items-center bg-transparent backdrop-blur py-2 px-4 rounded-full">
+        <p className="text-xs text-white text-center">
+          Projet réalisé par l&apos;équipe Hackathon Ynov Sophia – 2024
+        </p>
+      </div>
     </Section>
   );
 }

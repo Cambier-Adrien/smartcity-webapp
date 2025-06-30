@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 
 export default function QuestionStepPage() {
   const params = useParams() as { step: string };
-  // Si tu veux charger les questions côté client :
   const [questions, setQuestions] = useState([]);
   useEffect(() => {
     fetch("/questions.json")

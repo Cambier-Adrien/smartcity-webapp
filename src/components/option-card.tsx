@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Title from "@/components/ui/title";
 
 interface OptionCardProps {
   title: string;
@@ -25,24 +26,24 @@ export default function OptionCard({
       whileHover={{
         scale: 1.04,
         boxShadow: "0 12px 48px 0 rgba(0,0,0,0.12)",
-        backgroundColor: "#FFB7C5",
+        backgroundColor: selected ? "#F0F6FF" : "#fff",
       }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className={`group w-full max-w-xl rounded-4xl bg-card-pastel shadow-card border border-gray-100 transition-all duration-200 p-10 flex flex-col items-center gap-8 cursor-pointer ${
+      className={`group w-full max-w-xl rounded-3xl bg-white shadow-[0_8px_32px_0_rgba(0,0,0,0.12)] border border-gray-100 transition-all duration-200 p-10 flex flex-col items-center gap-8 cursor-pointer ${
         selected ? "ring-4 ring-accent-blue scale-105 bg-accent-pink/30" : ""
       }`}
       style={{ minHeight: 420 }}
     >
-      <div className="w-full h-56 rounded-3xl overflow-hidden bg-gray-100 flex items-center justify-center mb-4">
+      <div className="w-full h-56 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center mb-4">
         <img
           src={image}
           alt={title}
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
         />
       </div>
-      <h3 className="apple-title text-3xl md:text-4xl mb-2 text-text text-center leading-tight">
+      <Title level={3} className="mb-2 text-text text-center leading-tight">
         {title}
-      </h3>
+      </Title>
       <p className="text-xl text-gray-600 text-center mb-2 font-sans">
         {description}
       </p>

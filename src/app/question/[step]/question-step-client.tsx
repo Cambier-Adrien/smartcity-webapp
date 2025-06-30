@@ -44,7 +44,7 @@ export default function QuestionStepClient({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <Card className="w-full">
+        <Card>
           <Title level={2} className="text-center mb-1">
             {questionObj.question}
           </Title>
@@ -63,12 +63,10 @@ export default function QuestionStepClient({
           ))}
         </Grid>
         <div className="mt-4 w-full">
-          <div className="bg-gray-50 rounded-xl p-5 text-gray-700 text-center shadow-sm">
-            <span className="block text-accent-blue font-semibold mb-1 text-sm uppercase tracking-wide">
-              Le saviez-vous ?
-            </span>
-            <span className="text-base md:text-lg">{questionObj.info}</span>
-          </div>
+          <Card className="w-full text-center">
+            <Title level={3}>Le saviez-vous ?</Title>
+            <span className="text-base text-gray-700">{questionObj.info}</span>
+          </Card>
         </div>
       </motion.div>
     </Section>

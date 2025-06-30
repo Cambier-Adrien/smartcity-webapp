@@ -29,7 +29,7 @@ export default function Title({
   if (level === 2) {
     return (
       <h2
-        className={`font-extrabold mb-2 text-black tracking-tight ${sizes[2]} ${className}`}
+        className={`font-bold mb-2 text-black tracking-tight ${sizes[2]} ${className}`}
       >
         {children}
       </h2>
@@ -37,7 +37,7 @@ export default function Title({
   }
   return (
     <h3
-      className={`font-extrabold mb-2 text-black tracking-tight ${sizes[3]} ${className}`}
+      className={`font-semibold mb-2 text-black tracking-tight ${sizes[3]} ${className}`}
     >
       {children}
     </h3>

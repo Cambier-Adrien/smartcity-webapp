@@ -72,12 +72,7 @@ export default function ResultPage() {
           className="w-full max-w-md mx-auto"
         />
         <div className="flex flex-col md:flex-row gap-4 mt-2 justify-center">
-          <Button
-            onClick={handleRestart}
-            className="text-base md:text-lg px-8 py-4 rounded-full"
-          >
-            Recommencer
-          </Button>
+          <Button onClick={handleRestart}>Recommencer</Button>
           <Button
             onClick={() =>
               navigator.share?.({
@@ -86,17 +81,16 @@ export default function ResultPage() {
                 url: window.location.href,
               })
             }
-            className="text-base md:text-lg px-8 py-4 rounded-full"
           >
             Partager
           </Button>
         </div>
-        <Link
-          href="/"
-          className="mt-6 text-accent-blue underline text-base font-medium"
-        >
-          Retour à l&apos;accueil
-        </Link>
+
+        <div className="flex justify-center items-center bg-transparent backdrop-blur py-2 px-4 rounded-full">
+          <Link href="/" className="text-xs text-white text-center">
+            Retour à l&apos;accueil
+          </Link>
+        </div>
       </motion.div>
     </Section>
   );
