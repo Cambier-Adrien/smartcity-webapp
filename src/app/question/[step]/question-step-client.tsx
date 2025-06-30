@@ -21,7 +21,7 @@ export default function QuestionStepClient({
   questions: Question[];
   step: string;
 }) {
-  const { choices, setChoice } = useStateContext();
+  const { setChoice } = useStateContext();
   const router = useRouter();
   const stepIndex = parseInt(step, 10) - 1;
   const questionObj = questions[stepIndex];
@@ -54,7 +54,6 @@ export default function QuestionStepClient({
             <Button
               key={choice}
               variant="choice"
-              selected={choices[stepIndex] === idx}
               className="w-full text-base md:text-lg py-3"
               onClick={() => handleSelect(idx)}
             >

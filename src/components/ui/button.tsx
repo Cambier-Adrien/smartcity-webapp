@@ -3,14 +3,12 @@ import React from "react";
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   variant?: "default" | "choice";
-  selected?: boolean;
 }
 
 export default function Button({
   children,
   className = "",
   variant = "default",
-  selected = false,
   ...rest
 }: ButtonProps) {
   let base =

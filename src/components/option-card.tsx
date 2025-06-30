@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Title from "@/components/ui/title";
 
 interface OptionCardProps {
@@ -35,9 +36,11 @@ export default function OptionCard({
       style={{ minHeight: 420 }}
     >
       <div className="w-full h-56 rounded-2xl overflow-hidden bg-gray-100 flex items-center justify-center mb-4">
-        <img
+        <Image
           src={image}
           alt={title}
+          width={400}
+          height={224}
           className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-200"
         />
       </div>
