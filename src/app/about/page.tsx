@@ -10,8 +10,9 @@ export default function AboutPage() {
       </Title>
       <p className="text-base md:text-lg text-gray-700 mb-4 text-center max-w-xl mx-auto">
         <strong>Imagine ta ville</strong> est une expérience interactive créée
-        lors du hackathon "IA for Good". L'objectif : sensibiliser à l'écologie
-        urbaine en montrant l'impact de nos choix sur la ville du futur.
+        lors du hackathon "IA for Good". L&apos;objectif : sensibiliser à
+        l&apos;écologie urbaine en montrant l&apos;impact de nos choix sur la
+        ville du futur.
       </p>
       <Card className="w-full max-w-xl mx-auto">
         <h3 className="text-lg font-bold mb-2 text-accent-blue">
@@ -63,7 +64,7 @@ export default function AboutPage() {
         </ul>
       </Card>
       <p className="text-xs text-gray-400 mt-6 text-center">
-        Projet réalisé par l'équipe Hackathon Ynov Sophia – 2024
+        Projet réalisé par l&apos;équipe Hackathon Ynov Sophia – 2024
       </p>
     </Section>
   );

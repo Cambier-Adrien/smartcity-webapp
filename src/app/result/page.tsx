@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import Section from "@/components/ui/section";
-import Title from "@/components/ui/title";
 import Button from "@/components/ui/button";
 import Card from "@/components/ui/card";
 
@@ -67,7 +66,7 @@ export default function ResultPage() {
           }
           description={
             <span className="text-lg font-semibold mt-2 block">
-              {interp.emoji} {interp.message}
+              {interp.emoji} {interp.message.replace(/'/g, "&apos;")}
             </span>
           }
           className="w-full max-w-md mx-auto"
@@ -96,7 +95,7 @@ export default function ResultPage() {
           href="/"
           className="mt-6 text-accent-blue underline text-base font-medium"
         >
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Link>
       </motion.div>
     </Section>
