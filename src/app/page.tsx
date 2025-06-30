@@ -20,10 +20,11 @@ export default function Home() {
             Imagine ta ville du futur
           </Title>
           <Subtitle className="text-center mb-2">
-            Construis une ville écologique et découvre son impact grâce à l'IA.
+            Construis une ville écologique et découvre son impact grâce à
+            l&apos;IA.
             <br />
-            Fais tes choix, influence le résultat, et partage ta vision d'une
-            Smart City durable !
+            Fais tes choix, influence le résultat, et partage ta vision
+            d&apos;une Smart City durable !
           </Subtitle>
           <Link href="/question/1" passHref>
             <Button className="text-base md:text-lg px-8 py-4 mt-2 rounded-full">

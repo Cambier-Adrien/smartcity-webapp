@@ -10,9 +10,9 @@ export default function AboutPage() {
       </Title>
       <p className="text-base md:text-lg text-gray-700 mb-4 text-center max-w-xl mx-auto">
         <strong>Imagine ta ville</strong> est une expérience interactive créée
-        lors du hackathon "IA for Good". L&apos;objectif : sensibiliser à
-        l&apos;écologie urbaine en montrant l&apos;impact de nos choix sur la
-        ville du futur.
+        lors du hackathon &quot;IA for Good&quot;. L&apos;objectif :
+        sensibiliser à l&apos;écologie urbaine en montrant l&apos;impact de nos
+        choix sur la ville du futur.
       </p>
       <Card className="w-full max-w-xl mx-auto">
         <h3 className="text-lg font-bold mb-2 text-accent-blue">
@@ -24,15 +24,15 @@ export default function AboutPage() {
             mobilité, énergie, nature, IA.
           </li>
           <li>
-            Les choix de l'utilisateur influencent le score écologique et la
-            vision finale de la ville.
+            Les choix de l&apos;utilisateur influencent le score écologique et
+            la vision finale de la ville.
           </li>
           <li>
-            Le résultat est généré par l'IA : image stylisée, score, slogan
+            Le résultat est généré par l&apos;IA : image stylisée, score, slogan
             personnalisé.
           </li>
           <li>
-            Le design s'inspire de{" "}
+            Le design s&apos;inspire de{" "}
             <a
               href="https://wepresent.wetransfer.com/"
               className="text-accent-pink underline"
@@ -51,11 +51,12 @@ export default function AboutPage() {
         </h3>
         <ul className="list-disc pl-6 space-y-1 text-gray-700 text-base">
           <li>
-            L'IA peut être un outil puissant pour l'écologie, mais elle pose
-            aussi des questions éthiques (surveillance, vie privée, etc.).
+            L&apos;IA peut être un outil puissant pour l&apos;écologie, mais
+            elle pose aussi des questions éthiques (surveillance, vie privée,
+            etc.).
           </li>
           <li>
-            Ce projet invite à réfléchir à l'équilibre entre technologie,
+            Ce projet invite à réfléchir à l&apos;équilibre entre technologie,
             environnement et qualité de vie.
           </li>
           <li>
