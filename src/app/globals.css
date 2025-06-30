@@ -28,3 +28,7 @@ body {
 .bg-pastel-gradient {
   background: linear-gradient(135deg, #fafafa 0%, #edf6fa 100%);
 }
+
+.custom-shadow {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}

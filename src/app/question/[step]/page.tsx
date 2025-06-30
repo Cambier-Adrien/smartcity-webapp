@@ -1,20 +1,19 @@
-import fs from "fs";
-import path from "path";
+"use client";
+import { useParams } from "next/navigation";
 import QuestionStepClient from "./question-step-client";
+import { useState, useEffect } from "react";
 
-interface Question {
-  question: string;
-  choices: string[];
-  info: string;
-}
+export default function QuestionStepPage() {
+  const params = useParams() as { step: string };
+  // Si tu veux charger les questions côté client :
+  const [questions, setQuestions] = useState([]);
+  useEffect(() => {
+    fetch("/questions.json")
+      .then((res) => res.json())
+      .then(setQuestions);
+  }, []);
 
-export default async function QuestionStepPage({
-  params,
-}: {
-  params: { step: string };
-}) {
-  const filePath = path.join(process.cwd(), "public", "questions.json");
-  const file = fs.readFileSync(filePath, "utf-8");
-  const questions: Question[] = JSON.parse(file);
+  if (!questions.length) return null; // ou un loader
+
   return <QuestionStepClient questions={questions} step={params.step} />;
 }
